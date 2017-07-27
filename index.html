@@ -6,6 +6,7 @@
     <title>你毅大哥的个人网站</title>
     <style>
           *{margin:0;padding:0;}
+          
           body{
             background-image:url(images/my-background.jpg);
             width:100%;
@@ -41,13 +42,14 @@
             top:338px;
           }
          section>div.image-area{
-            width:294px;
+            width:80%;
             border:1px solid lightblue;
             padding:10px 10px 20px 10px;
             box-shadow:2px 2px 20px cyan;
             background-image:url(images/image1-background.jpg);
             background-size:100%;
             opacity: 0.8;
+            float:left;
           }
           section>div.image{
             border:3px groove lightgray;
@@ -74,9 +76,11 @@
             left:30%;
           }
           .rotate_right{
+            float:left;
             transform:rotate(-14deg);
           }
           .rotate_left{
+            float:left;
             transform:rotate(14deg);
           }
           h3{
@@ -88,6 +92,11 @@
             font-family:'Times New Roman', Times, serif;
             color:dimgrey;
             }
+          @media screen and(max-width:800px){
+              section>div img[alt="image2"]{
+                float:right;
+              }
+          }
     </style>
   </head>
   <body>
@@ -97,12 +106,12 @@
         <img class="headportrait" src="images/my-image.jpg" alt="My test image">
     </nav>
     <section>
-          <div class="image-area position1 rotate_left image">
-            <img src="images/image1.jpg" alt="iamge1"/>
+          <div class="image-area rotate_left image">
+            <img src="images/image1.jpg" alt="image1"/>
             <p class="p1">Every day, upon picking up my 11-year-old son from school, I would ask, “How was your day?” For years, I got the same response—“Fine, fine”—with</p>
           </div>
-          <div class="image-area position2 rotate_right image">
-               <img src="images/image2.jpg" alt="iamge2"/>
+          <div class="image-area rotate_right image">
+               <img src="images/image2.jpg" alt="image2"/>
                <p class="p1">They were the best cookies I&rsquo;d ever baked, the ingredients more expensive than a state dinner&rsquo;s, a mix of my son&rsquo;s favorite recipes.</p>
           </div>
     </section>
