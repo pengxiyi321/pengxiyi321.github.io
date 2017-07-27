@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,70 +10,115 @@
             background-image:url(images/my-background.jpg);
             width:100%;
           }
-          .headportrait{
-              width:15vw;
-              margin:10px;
+          header {
+            display: block;
+            width: 100%;
+            height: 338px;
+            background-image:url(images/head.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+          nav{
+             position:fixed;
+             float:left;
+          }
+          nav img.headportrait{
+              width:60px;
+              margin:10px 10px 10px 10px;
               border:3px groove coral;
               border-radius: 2em;
               box-shadow:10px 10px 100px 10px royalblue;
-              position:absolute;
-              left:10px;
-              top:10px;
           }
-          div.image-area{
+          section{
+            width:30%;
+            display: block;
+            float:left;
+            position:absolute;
+            top:338px;
+          }
+         section>div.image-area{
             width:294px;
             border:1px solid lightblue;
             padding:10px 10px 20px 10px;
             box-shadow:2px 2px 20px cyan;
-            background-color: lavenderblush;
+            background-image:url(images/image1-background.jpg);
+            background-size:100%;
             opacity: 0.8;
           }
-          div.image{
+          section>div.image{
             border:3px groove lightgray;
             border-radius: 2em;
           }
-          div.rotate_left{
-            float:left;
-            transform:rotate(14deg);
-          }
-          div.position1{
-            position:absolute;
-            right:20px;
-            top:20px;
-          }
-          div.position2{
-            position:absolute;
-            right:20px;
-            top:240px;
-          }
-          img{
+          section>div img{
             width:60%;
             height:60%;
             float:left;
             border-radius: 2em;
           }
-          p{
+          section>div p.p1{
             font-size:14px;
             font-style:oblique;
             color:dodgerblue;
             font-weight:bolder;
             word-wrap:wrap;
           }
-          div.rotate_right{
-            float:right;
+          section1{
+            width:70%;
+            display: block;
+            position:absolute;
+            top:338px;
+            left:30%;
+          }
+          .rotate_right{
             transform:rotate(-14deg);
           }
+          .rotate_left{
+            transform:rotate(14deg);
+          }
+          h3{
+            text-align: center;
+            margin:10px;
+          }
+          p{
+            text-indent: 2em;
+            font-family:'Times New Roman', Times, serif;
+            color:dimgrey;
+            }
     </style>
   </head>
   <body>
-    <img class="headportrait" src="images/my-image.jpg" alt="My test image">
-    <div class="image-area position1 rotate_left image">
+    <header>    
+    </header>
+    <nav>
+        <img class="headportrait" src="images/my-image.jpg" alt="My test image">
+    </nav>
+    <section>
+          <div class="image-area position1 rotate_left image">
             <img src="images/image1.jpg" alt="iamge1"/>
-            <p>Every day, upon picking up my 11-year-old son from school, I would ask, “How was your day?” For years, I got the same response—“Fine, fine”—with</p>
-    </div>
-    <div class="image-area position2 rotate_right image">
-      <img src="images/image2.jpg" alt="iamge2"/>
-            <p>They were the best cookies I&rsquo;d ever baked, the ingredients more expensive than a state dinner&rsquo;s, a mix of my son&rsquo;s favorite recipes.</p>
-    </div>
+            <p class="p1">Every day, upon picking up my 11-year-old son from school, I would ask, “How was your day?” For years, I got the same response—“Fine, fine”—with</p>
+          </div>
+          <div class="image-area position2 rotate_right image">
+               <img src="images/image2.jpg" alt="iamge2"/>
+               <p class="p1">They were the best cookies I&rsquo;d ever baked, the ingredients more expensive than a state dinner&rsquo;s, a mix of my son&rsquo;s favorite recipes.</p>
+          </div>
+    </section>
+    <section1>
+     <div class="h3">
+          <h3>welcome my personal blog!</h3>
+          <p>Life is scary. One day you wake up feeling like you can take over the world, and the next day you wake up feeling like all you want to do is to lay in bed and hide from everything.</p>
+          <p>People walk into your life, grab your hand, and lead you the most beautiful path you've known, but sometimes the same people let go of your hand without warning, and you become stranded at a place where you never thought you'ld feel lost.</p>
+          <p>Let's be honest, sometimes everything is going so great and it seems like nothing could go wrong , but right when you begin to think that, something so horrible comes crashing down and all of a sudden more problems come ricocheting around you and you just feel so hopeless cause it's so bad...</p>
+          <p>It's so hard to understand why such things happen in life,and I personally wish I had an answer to that "why?" you always ask yourself , but all I can say that is no matter how hard life gets,you have to keep going. The life around you will never stop going on.</p>
+          <p>I'll be honest and say that sometimes I feel a little bit worried and all I can think is "will I be able to keep up? What if everything goes too fast?" But I realized that being scared and living with that burden of running away from problems only slow me down even more.</p>
+          <p>And I've come to the point where I believe that because life never stops, I shouldn't stop either. It's okay to take break and to give yourself time to heal, but you cannot give up and you cannot quit.</p>
+          <p>Keep positive, fill you heart with gratitude for what you already have, and always remind to humble and true to who you are！</p>
+             With Love, <br/>
+             Your soul
+          </div>
+    </section1>
   </body>
 </html>
