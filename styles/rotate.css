@@ -1,0 +1,8 @@
+.rotate_right{
+    float:left;
+    transform:rotate(-14deg);
+    }
+.rotate_left{
+    float:left;
+    transform:rotate(14deg);
+    }

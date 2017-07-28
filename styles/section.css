@@ -1,0 +1,28 @@
+section>div.image-area{
+    width:80%;
+    border:1px solid lightblue;
+    padding:10px 10px 20px 10px;
+    box-shadow:2px 2px 20px cyan;
+    background-image:url(../images/image1-background.jpg);
+    background-size:100%;
+    opacity: 0.8;
+    float:left;
+    margin:5px ;
+    }
+section>div.image{
+    border:3px groove lightgray;
+    border-radius: 2em;
+    }
+section>div img{
+    width:60%;
+    height:60%;
+    float:left;
+    border-radius: 2em;
+    }
+section>div p.p1{
+    font-size:14px;
+    font-style:oblique;
+    color:dodgerblue;
+    font-weight:bolder;
+    word-wrap:wrap;
+    }
