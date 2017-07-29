@@ -6,7 +6,6 @@
     overflow: hidden;
     transition: all 1s;
     color: #fff;
-    background-color: #1e1e1f;
     }
 .blog-background{
     display:block;
@@ -20,4 +19,6 @@
     top:0;
     transform: 1s ease all;
     opacity: 1;
+    border-bottom:2px solid lightblue;
+    border-radius:0 0 2em 2em;
     }

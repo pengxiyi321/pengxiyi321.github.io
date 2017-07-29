@@ -8,7 +8,6 @@
 body{
     background-image:url(../images/my-background.jpg);
     width:100%;
-    min-height:1572px;
 }
 nav{
     position:fixed;
@@ -26,8 +25,7 @@ section1{
     float:left;
     }
 footer{
-    position:absolute;
-    top:1552px;
+    clear:both;
     padding:1.5rem 0;
     width:100%;
     height:20px;
