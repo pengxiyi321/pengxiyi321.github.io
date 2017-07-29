@@ -6,7 +6,33 @@
 </head>
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
     <title>你毅大哥的个人网站</title>
-    <style type="text/css">     
+    <style type="text/css">
+        a{
+          text-decoration:none;
+          color:gray;
+        }
+        #div1{
+          position:fixed;
+          right:10px;
+          bottom:10px;
+          opacity: 0.6;
+        }
+        #div1 img:hover{
+          box-shadow:10px 10px 50px lightcoral;
+          width:80th;
+          opacity:1;
+          transform:rotate(360deg);
+          transition:2s;
+          -o-transition:2s;
+          -webkit-transition:2s;
+          -moz-transition:2s;
+        }
+        div>a img[alt=gohead]{
+          width:60px;
+          margin:10px 10px 10px 10px;
+          border:1px groove #eee;
+          border-radius: 2em;
+        }
     </style>
   </head>
   <body>
@@ -38,36 +64,13 @@
           <p>Keep positive, fill you heart with gratitude for what you already have, and always remind to humble and true to who you are！</p>
              With Love, <br/>
              Your soul
-          </div>
-          <table border="1" width="100%">
-            
-               <caption>标题</caption>
-               <thead style="color:green">
-               <tr>
-                 <th>第一行第一列</th>
-                 <th>第一行第二列</th>
-                 <th colspan="2">跨两行的列</th>
-               </tr>
-               </thead>
-               <tbody style="color:red">
-               <tr>
-                 <td>第二行第一列</td>
-                 <td>第二行第二列</td>
-                 <td>the first</td>
-                 <td>the second</td>
-              </tr>
-              <tbody>
-              <tfoot style="color:yellow">
-                <tr>
-                  <td>第三行第一列</td>
-                  <td>第三行第二列</td>
-                  <td>the first</td>
-                  <td>the second</td>
-                </tr>
-              </tfoot>
-          </table>
+      </div>      
     </section1>
     <footer>
+      <p>Copyright © 2017 <a href="https://pengxiyi321.github.io">你毅大哥的博客</a> • Powered by <a href="http://typecho.org/">Typecho</a> • Theme Mirages</p>
     </footer>
+    <div id="div1">
+     <a href="#"><img class="headportrait" src="images/gohead.jpg" alt="gohead"/></a>
+    </div>
   </body>
 </html>

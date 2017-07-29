@@ -26,3 +26,16 @@ section>div p.p1{
     font-weight:bolder;
     word-wrap:wrap;
     }
+section>div a{
+    text-decoration:none;
+}
+section> div:hover{
+   box-shadow: 20px 20px 100px lightcoral;
+   transform: rotate(360deg);
+}
+section>div{
+      transition:  2s;
+-moz-transition:  2s;	/* Firefox 4 */
+-webkit-transition:  2s;	/* Safari 和 Chrome */
+-o-transition:  2s;	/* Opera */
+}

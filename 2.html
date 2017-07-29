@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script>
+ function qiehuan(num){
+                for(var id = 0;id<=9;id++)
+                {
+                        if(id==num)
+                        {
+                                document.getElementById("qh_con"+id).style.display="block";
+                                document.getElementById("mynav"+id).className="nav_on";
+                        }
+                        else
+                        {
+                                document.getElementById("qh_con"+id).style.display="none";
+                                document.getElementById("mynav"+id).className="";
+                        }
+                }
+        }
+
+</script>
+</head>
+<body>
+<div id="menu_out">
+  <div id="menu_in">
+   <div id="menu">
+    <ul id="nav">
+       <li>
+        <a class="nav_on" id="mynav0" onmouseover="javascript:qiehuan(0)" href="#"><span>首 页</span>
+        </a>
+       </li>
+       <li class="menu_line"></li>
+       <li>
+        <a class="nav_off" id="mynav1" onmouseover="javascript:qiehuan(1)" href="#"><span>首页1</span>        </a>
+       </li>
+     </ul>
+    </div>
+    <div id="menu_con">
+     <div id="qh_con0" style="display:none;">
+       <ul>
+        <li><a href="#"><span>1</span></a></li>
+        <li class="menu_line2"></li>
+        <li><a href="#"><span>2</span></a></li>
+        <li class="menu_line2"></li>
+        <li><a href="#"><span>3</span></a></li>
+       </ul>
+     </div>
+     <div id="qh_con1" style="display:none;">
+       <ul>
+        <li><a href="#"><span>4</span></a></li>
+        <li class="menu_line2"></li>
+        <li><a href="#"><span>5</span></a></li>
+        <li class="menu_line2"></li>
+        <li><a href="#"><span>6</span></a></li>
+       </ul>
+     </div>
+    </div><!-----menu_con end---------->
+   </div><!-----menu end--------->
+  </div><!------menu_in end------->
+ </div><!----menu_out end------->    
+</body>
+</html>

@@ -5,3 +5,12 @@ nav a img.headportrait{
     border-radius: 2em;
     box-shadow:10px 10px 100px 10px royalblue;
     }
+nav a img:hover{
+    width:80px;
+    transform:rotate(360deg);
+    transform-origin: 30% 40%;
+        transition:2s;
+    -o-transition: 2s;
+    -webkit-transition:2s;
+    -moz-transition: 2s;   
+}
