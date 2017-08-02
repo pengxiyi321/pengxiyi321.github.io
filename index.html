@@ -1,48 +1,25 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
     <meta charset="utf-8">
-</head>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/audioPlay.js"></script>
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
     <title>你毅大哥的个人网站</title>
     <style type="text/css">
-        a{
-          text-decoration:none;
-          color:gray;
-        }
-        #div1{
-          position:fixed;
-          right:10px;
-          bottom:10px;
-          opacity: 0.6;
-        }
-        #div1 img:hover{
-          box-shadow:10px 10px 50px lightcoral;
-          width:80th;
-          opacity:1;
-          transform:rotate(360deg);
-          transition:2s;
-          -o-transition:2s;
-          -webkit-transition:2s;
-          -moz-transition:2s;
-        }
-        div>a img[alt=gohead]{
-          width:60px;
-          margin:10px 10px 10px 10px;
-          border:1px groove #eee;
-          border-radius: 2em;
-        }
     </style>
   </head>
-  <body>
+  <body onload="startTime();audioPlay()">
+    <audio id="audio1" src="audios/frist.mp3"></audio>
     <header id="masthead"  style="height:338px;" >
           <div class="blog-background" style="background-image:url(images/head.jpg);"></div>
     </header>
-    <nav>
         <a href="#"><img class="headportrait" src="images/my-image.jpg" alt="My test image"></a>
-    </nav>
     <section>
+      <div id="left_section">
           <div class="image-area rotate_left image">
             <img src="images/image1.jpg" alt="image1"/>
             <p class="p1">Every day, upon picking up my 11-year-old son from school, I would ask, “How was your day?” For years, I got the same response—“Fine, fine”—with</p>
@@ -51,8 +28,8 @@
                <img src="images/image2.jpg" alt="image2"/>
                <p class="p1">They were the best cookies I&rsquo;d ever baked, the ingredients more expensive than a state dinner&rsquo;s, a mix of my son&rsquo;s favorite recipes.</p>
           </div>
-    </section>
-    <section1>
+      </div>
+      <div id="right_section">
      <div class="h3">
           <h3>welcome my personal blog!</h3>
           <p>Life is scary. One day you wake up feeling like you can take over the world, and the next day you wake up feeling like all you want to do is to lay in bed and hide from everything.</p>
@@ -64,13 +41,16 @@
           <p>Keep positive, fill you heart with gratitude for what you already have, and always remind to humble and true to who you are！</p>
              With Love, <br/>
              Your soul
-      </div>      
-    </section1>
+      </div>
+      </div>    
+    </section>
     <footer>
       <p>Copyright © 2017 <a href="https://pengxiyi321.github.io">你毅大哥的博客</a> • Powered by <a href="http://typecho.org/">Typecho</a> • Theme Mirages</p>
     </footer>
     <div id="div1">
-     <a href="#"><img class="headportrait" src="images/gohead.jpg" alt="gohead"/></a>
+     <a href="#"><img src="images/gohead.jpg" alt="gohead"/></a>
+    </div>
+    <div id="time">
     </div>
   </body>
 </html>
